@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First App</title>
+    <link rel="stylesheet" href="algnmnt.css">
+</head>
+<body>
+    <form method="post" action="result" enctype="multipart/form-data">
+        <div class = "inputs">
+            <label for="Bpressure">Blood Pressure:</label>
+            <div class="tbox"><input type="text" id="Bpressure" name="Bpressure"><br><br></div>
+            <label for="Fever">Fever:</label>
+            <div class="tbox"><input type="text" id="Fever" name="Fever"><br><br></div>
+            <label for="Diabetes">Diabetes:</label>
+            <div class="tbox"><input type="text" id="Diabetes" name="Diabetes"><br><br></div>
+            <label for="Vomit">Vomit:</label>
+            <div class="tbox"><input type="text" id="Vomit" name="Vomit"><br><br></div>
+        </div>
+        
+        <div>
+            <label for="Classifiers">Classifiers:</label>
+            <input type="radio" id="linreg" name="classifier" value="linear">
+                <label for="linreg">Linear Regression</label>
+                <input type="radio" id="near" name="classifier" value="nearestN">
+                <label for="near">Nearest Neighbor</label>
+                <input type="radio" id="nb" name="classifier" value="naive">
+                <label for="nb">Naive Bayes</label>
+                <br>
+                <input type="radio" id="svm" name="classifier" value="svm">
+                <label for="svm">SVM</label>
+                <input type="radio" id="dectree" name="classifier" value="decisiontree">
+                <label for="dectree">Decision Tree</label>
+                <input type="radio" id="ann" name="classifier" value="ann">
+                <label for="ann">ANN</label><br><br>
+        </div>
+
+        <div>
+            <input type="file" name="test_input_file" id="test_input">
+        </div>
+
+        </div>
+            <input class="btn" type="submit" value="Classify">
+        </div>
+    </form>
+</body>
+</html>
